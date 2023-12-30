@@ -1,10 +1,12 @@
 const fs = require("fs/promises");
+
 const fileName = "myfile.txt";
 const fileContent = "Newton School";
+
 const writeFile = async (fileName, fileContent) => {
   // write code here
-  // dont change function name
-   try {
+  // don't change function name
+  try {
     // Use fs.promises.writeFile to create a new file with the given filename and content
     await fs.promises.writeFile(fileName, fileContent, "utf-8");
 
@@ -15,6 +17,5 @@ const writeFile = async (fileName, fileContent) => {
     throw error;
   }
 };
-writeFile();
 
 module.exports = { writeFile };
