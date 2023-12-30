@@ -15,5 +15,6 @@ const writeFile = async (fileName, fileContent) => {
     throw error;
   }
 };
+writeFile();
 
 module.exports = { writeFile };
